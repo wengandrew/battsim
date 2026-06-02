@@ -2,30 +2,48 @@
 
 Andrew Weng
 
-This workspace is used to build battery simulations using existing tools such as PyBaMM.
+Simulation workspace for battery modeling using [PyBaMM](https://www.pybamm.org/) and related tools.
 
-# Getting Started
+## Reports
 
-Before starting up the code, set up your virtual environment. The simplest way to do this is to enter the following commands in your terminal:
+HTML reports are published via GitHub Pages:
+
+- [Lithium Plating vs. Anode Thickness](https://wengandrew.github.io/battsim/lithium_plating_thickness_report.html) — Why thinner anodes reduce plating risk during fast charge
+
+## Project Structure
 
 ```
+src/               Simulation scripts
+docs/              HTML reports (GitHub Pages)
+outputs/           Generated figures
+*.ipynb            Exploratory Jupyter notebooks
+```
+
+## Getting Started
+
+Set up a virtual environment and install dependencies:
+
+```bash
 python3 -m venv venv
-```
-
-Next, activate your virtual environment:
-
-```
 source venv/bin/activate
-```
-
-With your virtual environment activate, install the required packages:
-
-```
 pip install -r requirements.txt
 ```
 
-Now you are ready to go:
+Run a simulation:
 
+```bash
+python3 src/lithium_plating_thickness_study.py
 ```
+
+Or launch Jupyter for notebook-based exploration:
+
+```bash
 jupyter notebook
 ```
+
+## Simulations
+
+| Script | Description |
+|--------|-------------|
+| `src/lithium_plating_thickness_study.py` | DFN model study of anode thickness effect on electrolyte concentration and plating risk |
+| `src/single_cell_eocv_r_rc.py` | Equivalent circuit model (OCV-R-RC) simulation |
