@@ -8,7 +8,7 @@ Simulation workspace for battery modeling using [PyBaMM](https://www.pybamm.org/
 
 HTML reports are published via GitHub Pages:
 
-- [Lithium Plating vs. Anode Thickness](https://wengandrew.github.io/battsim/lithium_plating_thickness_report.html) — Why thinner anodes reduce plating risk during fast charge
+- [Anode Thickness and Lithium Plating Risk](https://wengandrew.github.io/battsim/lithium_plating_thickness_report.html) — How electrode thickness affects electrolyte transport and plating onset
 
 ## Project Structure
 
